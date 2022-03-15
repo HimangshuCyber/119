@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+body{
+    font-family: Poppins;
+    background-color: #f3f3f3;
+    color: #d83600;
+}
+
+#show_sketch{
+    float:right;
+    margin-right: 10px;
+}
+h2{
+    color: #fff;
+    margin-left: 3px;
+    width: 150px;
+    height: 40px;
+    padding-top: 3px;
+    animation:ls;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+@keyframes ls {
+    from{
+        background-color: #ff6d62;
+
+    }
+    to{
+        background-color: #ff7979;
+    }
+}
+canvas{
+    animation-name: myAnimation;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes myAnimation{
+    from{
+        box-shadow: 0.3px 1px 10px rgb(255, 82, 82);
+    }
+    to{
+        box-shadow: 0.3px 1px 5px rgb(251, 255, 34);
+    }
+}
